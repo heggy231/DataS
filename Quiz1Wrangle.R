@@ -73,7 +73,7 @@ sapply(split(DT$pwgtp15,DT$SEX),mean) #works! 2 numbers
 #sapply(list, function, ..., simplify)
 #split(x, f, drop = FALSE, ...), x- whole vector, data frame
 #f - factor defines the grouping, drop - 
-DT[,mean(pwgtp15),by=SEX] ##works! 2 numbers
+DT[,mean(pwgtp15),by=SEX] ##works! 2 numbers separated by sex
 
 tapply(DT$pwgtp15,DT$SEX,mean) ##works! 2 numbers.  good sign
 
