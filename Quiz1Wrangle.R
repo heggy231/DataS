@@ -75,7 +75,7 @@ sapply(split(DT$pwgtp15,DT$SEX),mean) #works! 2 numbers
 #f - factor defines the grouping, drop - 
 DT[,mean(pwgtp15),by=SEX] ##works! 2 numbers
 
-tapply(DT$pwgtp15,DT$SEX,mean) ##works! 2 numbers
+tapply(DT$pwgtp15,DT$SEX,mean) ##works! 2 numbers.  good sign
 
 
 system.time(for(i in 1:100) tapply(DT$pwgtp15,DT$SEX,mean))
